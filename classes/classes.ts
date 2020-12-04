@@ -211,3 +211,5 @@ const turboHelice =  new Aviao('TU-114', 'PT-ABC')
 //turboHelice.prefixo = ('PT-ASD') - ERR
 // Uma vez instanciado não pode mais ser alterado, por causa do "READONLY"
 console.log(turboHelice)
+
+alert('testo')
