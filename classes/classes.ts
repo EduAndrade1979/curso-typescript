@@ -212,4 +212,4 @@ const turboHelice =  new Aviao('TU-114', 'PT-ABC')
 // Uma vez instanciado não pode mais ser alterado, por causa do "READONLY"
 console.log(turboHelice)
 
-console.log('isso é um test de git.')
+alert('testo')
