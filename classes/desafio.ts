@@ -117,11 +117,4 @@ function teste() {
     }
 }
 
-teste()
-
-
-
-  
-    
-
-
+teste() 
