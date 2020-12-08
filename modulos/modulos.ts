@@ -11,4 +11,6 @@ console.log('Testando push and pull do git')
 console.log('Enviando do note pro remoto')
 
 console.log('Enviando arquivo da branch desenvolvimento') // A merge para a master só será 
-                                                          //feita no fim do curso
+                                                          //feita no fim do curso.
+
+// Alteração enviada da branch 'desenvolvomento'
