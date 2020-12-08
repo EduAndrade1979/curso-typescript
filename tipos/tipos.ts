@@ -201,9 +201,9 @@ type Correntista = {
     contatos: string[]
 }
  
-let correntista = {
+let correntista: Correntista = {
     nome: 'Ana Silva',
-    contaBancaria: contaBancaria,
+    contaBancaria: contaBancaria, 
     contatos: ['34567890', '98765432']
 }
  

@@ -10,7 +10,7 @@
 //         }
 //     }
 // }
-/// <reference path='geometriacirc.ts'/> 
+/// <reference path='geometriaCirc.ts'/> 
 /// <reference path='geometriaRect.ts'/> 
 // const PI: number = 2.99 
 //=> O PI de dentro do namespace permanece protegido e é possivel gerar 
