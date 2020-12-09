@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^14.14.11",
     "live-server": "^1.2.1",
     "systemjs": "^0.21.6"
   },

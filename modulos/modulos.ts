@@ -13,4 +13,12 @@ console.log('Enviando do note pro remoto')
 console.log('Enviando arquivo da branch desenvolvimento') // A merge para a master só será 
                                                           //feita no fim do curso.
 
-// Alteração enviada da branch 'desenvolvomento'
+// Alteração enviada da branch 'desenvolvimento'
+
+
+
+const { digaOla } = require ('./novo') //OBS: Outro modo de trabalhar com modulo (commonJS),
+                                       // O modo (export/import) está ligado ao (Es6)
+
+
+console.log(digaOla('Marta'))
