@@ -50,4 +50,41 @@ saudarComOla(meuCliente)
 meuCliente.saudar('Solo')
 console.log(meuCliente.ultimaCompra)
 
+// Testando...
 
+interface CalculoMediaAluno {
+    nomeAluno: string
+    primeiraNota: number
+    segundaNota: number
+    terceiraNota?: number      
+}
+
+class Media implements CalculoMediaAluno {
+    nomeAluno: string = ''
+    primeiraNota: number = 0
+    segundaNota: number = 0
+    terceiraNota: number = -1
+    CalcMedia(): number {
+        if (this.terceiraNota >= 0) {
+            return ((this.primeiraNota + this.segundaNota + this.terceiraNota) / 3)
+        } else {
+        return ((this.primeiraNota + this.segundaNota) / 2)
+        }
+    }
+}
+const aluno = new Media
+aluno.nomeAluno = 'Cid'
+aluno.primeiraNota = 9
+aluno.segundaNota = 7
+
+console.log(`O aluno ${aluno.nomeAluno} teve média 
+${aluno.CalcMedia()}`)
+
+const aluno1 = new Media
+aluno1.nomeAluno = 'Jeff'
+aluno1.primeiraNota = 8
+aluno1.segundaNota = 6
+aluno1.terceiraNota = 7
+
+console.log(`O aluno ${aluno1.nomeAluno} teve média 
+${aluno1.CalcMedia()}`)
