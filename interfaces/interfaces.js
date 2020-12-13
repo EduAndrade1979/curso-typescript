@@ -64,4 +64,29 @@ aluno1.segundaNota = 6;
 aluno1.terceiraNota = 7;
 console.log(`O aluno ${aluno1.nomeAluno} teve média 
 ${aluno1.CalcMedia()}`);
+let potencia;
+potencia = function (base, exp) {
+    return Math.pow(base, exp);
+};
+console.log(potencia(3, 10));
+console.log((Math.pow(3, 10))); // Sintaxe alternativa...
+Object.prototype.log = function () {
+    console.log(this.toString());
+};
+const q = 2;
+const w = 3;
+const e = 4;
+console.log(q);
+console.log(w);
+console.log(e);
+q.log();
+w.log();
+e.log();
+const Cli = {
+    nome: 'Pedro',
+    toString() {
+        return this.nome;
+    }
+};
+Cli.log();
 //# sourceMappingURL=interfaces.js.map

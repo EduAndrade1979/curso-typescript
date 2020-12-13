@@ -89,3 +89,58 @@ aluno1.terceiraNota = 7
 
 console.log(`O aluno ${aluno1.nomeAluno} teve média 
 ${aluno1.CalcMedia()}`)
+
+//Interface Função
+
+interface FuncaoCalculo {
+    (a: number, b: number): number
+}
+
+let potencia: FuncaoCalculo
+
+potencia = function(base: number, exp: number): number{
+    return Math.pow (base, exp)
+}
+
+console.log(potencia(3, 10))
+console.log((3 ** 10)) // Sintaxe alternativa...
+
+
+
+// AULA 105 - TESTES DE HERANÇA DE OBRIGAÇÃO DE IMPLEMENTOS
+
+// QUANDO UMA CLASSE IMPLEMENTA UMA INTERFACE UTILIZA-SE A PALAVRA IMPLEMENTS.
+// QUANDO UAM INTERFACE IMPLEMENTA OUTRA INTERFACE UTILIZA-SE A PALAVRA EXTENDS.
+
+
+
+// Interface para estender Object
+
+
+interface Object {
+    log(): void
+}
+
+Object.prototype.log = function() {
+    console.log(this.toString())
+}
+
+const q = 2
+const w = 3
+const e = 4
+
+console.log(q)
+console.log(w)
+console.log(e)
+
+q.log()
+w.log()
+e.log()
+
+const Cli = {
+    nome: 'Pedro', 
+    toString() {
+        return this.nome
+    }
+}
+Cli.log() 
